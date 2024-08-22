@@ -12,7 +12,6 @@
 		C506391B2C75C8F600B644FF /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C506391A2C75C8F600B644FF /* LoginViewController.swift */; };
 		C50639202C75C8F700B644FF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C506391F2C75C8F700B644FF /* Assets.xcassets */; };
 		C50639232C75C8F700B644FF /* Base in Resources */ = {isa = PBXBuildFile; fileRef = C50639222C75C8F700B644FF /* Base */; };
-		C506392E2C75C8F700B644FF /* SocialLoginFeatureWithCleanArchitectureTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C506392D2C75C8F700B644FF /* SocialLoginFeatureWithCleanArchitectureTests.swift */; };
 		C50639382C75C8F700B644FF /* SocialLoginFeatureWithCleanArchitectureUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C50639372C75C8F700B644FF /* SocialLoginFeatureWithCleanArchitectureUITests.swift */; };
 		C506393A2C75C8F700B644FF /* SocialLoginFeatureWithCleanArchitectureUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C50639392C75C8F700B644FF /* SocialLoginFeatureWithCleanArchitectureUITestsLaunchTests.swift */; };
 		C5522A912C76F88100953006 /* SocialLoginUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5522A902C76F88100953006 /* SocialLoginUseCase.swift */; };
@@ -24,6 +23,15 @@
 		C5522A9E2C76F91600953006 /* KakaoOAuthRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5522A9D2C76F91600953006 /* KakaoOAuthRepository.swift */; };
 		C5522AA02C76F91F00953006 /* NaverOAuthRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5522A9F2C76F91F00953006 /* NaverOAuthRepository.swift */; };
 		C5522AA22C76F95300953006 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5522AA12C76F95300953006 /* LoginViewModel.swift */; };
+		C5522AAB2C76FAED00953006 /* SocialLoginUseCaseTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5522AAA2C76FAED00953006 /* SocialLoginUseCaseTest.swift */; };
+		C5522AAD2C76FB0500953006 /* AppleOAuthRepositoryTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5522AAC2C76FB0500953006 /* AppleOAuthRepositoryTest.swift */; };
+		C5522AAF2C76FB1100953006 /* GoogleOAuthRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5522AAE2C76FB1100953006 /* GoogleOAuthRepository.swift */; };
+		C5522AB12C76FB1E00953006 /* LineOAuthRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5522AB02C76FB1E00953006 /* LineOAuthRepository.swift */; };
+		C5522AB32C76FB2B00953006 /* TwitterOAuthRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5522AB22C76FB2B00953006 /* TwitterOAuthRepository.swift */; };
+		C5522AB52C76FB3800953006 /* FacebookOAuthRepositoryTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5522AB42C76FB3800953006 /* FacebookOAuthRepositoryTest.swift */; };
+		C5522AB72C76FB4400953006 /* KakaoOAuthRepositoryTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5522AB62C76FB4400953006 /* KakaoOAuthRepositoryTest.swift */; };
+		C5522AB92C76FB5000953006 /* NaverOAuthRepositoryTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5522AB82C76FB5000953006 /* NaverOAuthRepositoryTest.swift */; };
+		C5522ABB2C76FB6300953006 /* LoginViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5522ABA2C76FB6300953006 /* LoginViewModelTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,7 +60,6 @@
 		C50639222C75C8F700B644FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C50639242C75C8F700B644FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C50639292C75C8F700B644FF /* SocialLoginFeatureWithCleanArchitectureTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SocialLoginFeatureWithCleanArchitectureTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		C506392D2C75C8F700B644FF /* SocialLoginFeatureWithCleanArchitectureTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialLoginFeatureWithCleanArchitectureTests.swift; sourceTree = "<group>"; };
 		C50639332C75C8F700B644FF /* SocialLoginFeatureWithCleanArchitectureUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SocialLoginFeatureWithCleanArchitectureUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C50639372C75C8F700B644FF /* SocialLoginFeatureWithCleanArchitectureUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialLoginFeatureWithCleanArchitectureUITests.swift; sourceTree = "<group>"; };
 		C50639392C75C8F700B644FF /* SocialLoginFeatureWithCleanArchitectureUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialLoginFeatureWithCleanArchitectureUITestsLaunchTests.swift; sourceTree = "<group>"; };
@@ -65,6 +72,15 @@
 		C5522A9D2C76F91600953006 /* KakaoOAuthRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KakaoOAuthRepository.swift; sourceTree = "<group>"; };
 		C5522A9F2C76F91F00953006 /* NaverOAuthRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NaverOAuthRepository.swift; sourceTree = "<group>"; };
 		C5522AA12C76F95300953006 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		C5522AAA2C76FAED00953006 /* SocialLoginUseCaseTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialLoginUseCaseTest.swift; sourceTree = "<group>"; };
+		C5522AAC2C76FB0500953006 /* AppleOAuthRepositoryTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleOAuthRepositoryTest.swift; sourceTree = "<group>"; };
+		C5522AAE2C76FB1100953006 /* GoogleOAuthRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleOAuthRepository.swift; sourceTree = "<group>"; };
+		C5522AB02C76FB1E00953006 /* LineOAuthRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineOAuthRepository.swift; sourceTree = "<group>"; };
+		C5522AB22C76FB2B00953006 /* TwitterOAuthRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwitterOAuthRepository.swift; sourceTree = "<group>"; };
+		C5522AB42C76FB3800953006 /* FacebookOAuthRepositoryTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacebookOAuthRepositoryTest.swift; sourceTree = "<group>"; };
+		C5522AB62C76FB4400953006 /* KakaoOAuthRepositoryTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KakaoOAuthRepositoryTest.swift; sourceTree = "<group>"; };
+		C5522AB82C76FB5000953006 /* NaverOAuthRepositoryTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NaverOAuthRepositoryTest.swift; sourceTree = "<group>"; };
+		C5522ABA2C76FB6300953006 /* LoginViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModelTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,11 +131,11 @@
 		C50639152C75C8F600B644FF /* SocialLoginFeatureWithCleanArchitecture */ = {
 			isa = PBXGroup;
 			children = (
-				C5522A852C76F7F500953006 /* Feature */,
-				C5522A842C76F7F000953006 /* Domain */,
-				C5522A832C76F7E200953006 /* Data */,
 				C50639162C75C8F600B644FF /* AppDelegate.swift */,
 				C50639182C75C8F600B644FF /* SceneDelegate.swift */,
+				C5522A832C76F7E200953006 /* Data */,
+				C5522A842C76F7F000953006 /* Domain */,
+				C5522A852C76F7F500953006 /* Feature */,
 				C506391F2C75C8F700B644FF /* Assets.xcassets */,
 				C50639212C75C8F700B644FF /* LaunchScreen.storyboard */,
 				C50639242C75C8F700B644FF /* Info.plist */,
@@ -130,7 +146,9 @@
 		C506392C2C75C8F700B644FF /* SocialLoginFeatureWithCleanArchitectureTests */ = {
 			isa = PBXGroup;
 			children = (
-				C506392D2C75C8F700B644FF /* SocialLoginFeatureWithCleanArchitectureTests.swift */,
+				C5522AA32C76FA5400953006 /* Data */,
+				C5522AA52C76FA5F00953006 /* Domain */,
+				C5522AA42C76FA5900953006 /* Feature */,
 			);
 			path = SocialLoginFeatureWithCleanArchitectureTests;
 			sourceTree = "<group>";
@@ -263,6 +281,68 @@
 			path = OAuthRepositories;
 			sourceTree = "<group>";
 		};
+		C5522AA32C76FA5400953006 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				C5522AA62C76FA6D00953006 /* Repositories */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		C5522AA42C76FA5900953006 /* Feature */ = {
+			isa = PBXGroup;
+			children = (
+				C5522AA92C76FA8800953006 /* ViewModels */,
+			);
+			path = Feature;
+			sourceTree = "<group>";
+		};
+		C5522AA52C76FA5F00953006 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				C5522AA82C76FA8300953006 /* UseCases */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		C5522AA62C76FA6D00953006 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				C5522AA72C76FA7400953006 /* OAuthRepositories */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		C5522AA72C76FA7400953006 /* OAuthRepositories */ = {
+			isa = PBXGroup;
+			children = (
+				C5522AAC2C76FB0500953006 /* AppleOAuthRepositoryTest.swift */,
+				C5522AAE2C76FB1100953006 /* GoogleOAuthRepository.swift */,
+				C5522AB02C76FB1E00953006 /* LineOAuthRepository.swift */,
+				C5522AB22C76FB2B00953006 /* TwitterOAuthRepository.swift */,
+				C5522AB42C76FB3800953006 /* FacebookOAuthRepositoryTest.swift */,
+				C5522AB62C76FB4400953006 /* KakaoOAuthRepositoryTest.swift */,
+				C5522AB82C76FB5000953006 /* NaverOAuthRepositoryTest.swift */,
+			);
+			path = OAuthRepositories;
+			sourceTree = "<group>";
+		};
+		C5522AA82C76FA8300953006 /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+				C5522AAA2C76FAED00953006 /* SocialLoginUseCaseTest.swift */,
+			);
+			path = UseCases;
+			sourceTree = "<group>";
+		};
+		C5522AA92C76FA8800953006 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				C5522ABA2C76FB6300953006 /* LoginViewModelTest.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -334,6 +414,7 @@
 					};
 					C50639282C75C8F700B644FF = {
 						CreatedOnToolsVersion = 15.4;
+						LastSwiftMigration = 1540;
 						TestTargetID = C50639122C75C8F600B644FF;
 					};
 					C50639322C75C8F700B644FF = {
@@ -412,7 +493,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C506392E2C75C8F700B644FF /* SocialLoginFeatureWithCleanArchitectureTests.swift in Sources */,
+				C5522AAD2C76FB0500953006 /* AppleOAuthRepositoryTest.swift in Sources */,
+				C5522AB12C76FB1E00953006 /* LineOAuthRepository.swift in Sources */,
+				C5522AB32C76FB2B00953006 /* TwitterOAuthRepository.swift in Sources */,
+				C5522AB72C76FB4400953006 /* KakaoOAuthRepositoryTest.swift in Sources */,
+				C5522AAF2C76FB1100953006 /* GoogleOAuthRepository.swift in Sources */,
+				C5522AAB2C76FAED00953006 /* SocialLoginUseCaseTest.swift in Sources */,
+				C5522AB92C76FB5000953006 /* NaverOAuthRepositoryTest.swift in Sources */,
+				C5522ABB2C76FB6300953006 /* LoginViewModelTest.swift in Sources */,
+				C5522AB52C76FB3800953006 /* FacebookOAuthRepositoryTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -630,6 +719,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = C4K2HXA435;
@@ -639,6 +729,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = seonghunJeon.SocialLoginFeatureWithCleanArchitectureTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SocialLoginFeatureWithCleanArchitecture.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SocialLoginFeatureWithCleanArchitecture";
@@ -650,6 +741,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = C4K2HXA435;
