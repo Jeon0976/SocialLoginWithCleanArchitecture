@@ -9,13 +9,21 @@
 /* Begin PBXBuildFile section */
 		C50639172C75C8F600B644FF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C50639162C75C8F600B644FF /* AppDelegate.swift */; };
 		C50639192C75C8F600B644FF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C50639182C75C8F600B644FF /* SceneDelegate.swift */; };
-		C506391B2C75C8F600B644FF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C506391A2C75C8F600B644FF /* ViewController.swift */; };
-		C506391E2C75C8F600B644FF /* Base in Resources */ = {isa = PBXBuildFile; fileRef = C506391D2C75C8F600B644FF /* Base */; };
+		C506391B2C75C8F600B644FF /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C506391A2C75C8F600B644FF /* LoginViewController.swift */; };
 		C50639202C75C8F700B644FF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C506391F2C75C8F700B644FF /* Assets.xcassets */; };
 		C50639232C75C8F700B644FF /* Base in Resources */ = {isa = PBXBuildFile; fileRef = C50639222C75C8F700B644FF /* Base */; };
 		C506392E2C75C8F700B644FF /* SocialLoginFeatureWithCleanArchitectureTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C506392D2C75C8F700B644FF /* SocialLoginFeatureWithCleanArchitectureTests.swift */; };
 		C50639382C75C8F700B644FF /* SocialLoginFeatureWithCleanArchitectureUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C50639372C75C8F700B644FF /* SocialLoginFeatureWithCleanArchitectureUITests.swift */; };
 		C506393A2C75C8F700B644FF /* SocialLoginFeatureWithCleanArchitectureUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C50639392C75C8F700B644FF /* SocialLoginFeatureWithCleanArchitectureUITestsLaunchTests.swift */; };
+		C5522A912C76F88100953006 /* SocialLoginUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5522A902C76F88100953006 /* SocialLoginUseCase.swift */; };
+		C5522A942C76F8AF00953006 /* AppleOAuthRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5522A932C76F8AF00953006 /* AppleOAuthRepository.swift */; };
+		C5522A962C76F8B900953006 /* GoogleOAuthRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5522A952C76F8B900953006 /* GoogleOAuthRepository.swift */; };
+		C5522A982C76F8C800953006 /* LineOAuthRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5522A972C76F8C800953006 /* LineOAuthRepository.swift */; };
+		C5522A9A2C76F8E900953006 /* TwitterOAuthRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5522A992C76F8E900953006 /* TwitterOAuthRepository.swift */; };
+		C5522A9C2C76F90E00953006 /* FacebookOAuthRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5522A9B2C76F90E00953006 /* FacebookOAuthRepository.swift */; };
+		C5522A9E2C76F91600953006 /* KakaoOAuthRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5522A9D2C76F91600953006 /* KakaoOAuthRepository.swift */; };
+		C5522AA02C76F91F00953006 /* NaverOAuthRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5522A9F2C76F91F00953006 /* NaverOAuthRepository.swift */; };
+		C5522AA22C76F95300953006 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5522AA12C76F95300953006 /* LoginViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,8 +47,7 @@
 		C50639132C75C8F600B644FF /* SocialLoginFeatureWithCleanArchitecture.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SocialLoginFeatureWithCleanArchitecture.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C50639162C75C8F600B644FF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C50639182C75C8F600B644FF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		C506391A2C75C8F600B644FF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		C506391D2C75C8F600B644FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C506391A2C75C8F600B644FF /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		C506391F2C75C8F700B644FF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C50639222C75C8F700B644FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C50639242C75C8F700B644FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -49,6 +56,15 @@
 		C50639332C75C8F700B644FF /* SocialLoginFeatureWithCleanArchitectureUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SocialLoginFeatureWithCleanArchitectureUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C50639372C75C8F700B644FF /* SocialLoginFeatureWithCleanArchitectureUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialLoginFeatureWithCleanArchitectureUITests.swift; sourceTree = "<group>"; };
 		C50639392C75C8F700B644FF /* SocialLoginFeatureWithCleanArchitectureUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialLoginFeatureWithCleanArchitectureUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		C5522A902C76F88100953006 /* SocialLoginUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialLoginUseCase.swift; sourceTree = "<group>"; };
+		C5522A932C76F8AF00953006 /* AppleOAuthRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleOAuthRepository.swift; sourceTree = "<group>"; };
+		C5522A952C76F8B900953006 /* GoogleOAuthRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleOAuthRepository.swift; sourceTree = "<group>"; };
+		C5522A972C76F8C800953006 /* LineOAuthRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineOAuthRepository.swift; sourceTree = "<group>"; };
+		C5522A992C76F8E900953006 /* TwitterOAuthRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwitterOAuthRepository.swift; sourceTree = "<group>"; };
+		C5522A9B2C76F90E00953006 /* FacebookOAuthRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacebookOAuthRepository.swift; sourceTree = "<group>"; };
+		C5522A9D2C76F91600953006 /* KakaoOAuthRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KakaoOAuthRepository.swift; sourceTree = "<group>"; };
+		C5522A9F2C76F91F00953006 /* NaverOAuthRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NaverOAuthRepository.swift; sourceTree = "<group>"; };
+		C5522AA12C76F95300953006 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,10 +115,11 @@
 		C50639152C75C8F600B644FF /* SocialLoginFeatureWithCleanArchitecture */ = {
 			isa = PBXGroup;
 			children = (
+				C5522A852C76F7F500953006 /* Feature */,
+				C5522A842C76F7F000953006 /* Domain */,
+				C5522A832C76F7E200953006 /* Data */,
 				C50639162C75C8F600B644FF /* AppDelegate.swift */,
 				C50639182C75C8F600B644FF /* SceneDelegate.swift */,
-				C506391A2C75C8F600B644FF /* ViewController.swift */,
-				C506391C2C75C8F600B644FF /* Main.storyboard */,
 				C506391F2C75C8F700B644FF /* Assets.xcassets */,
 				C50639212C75C8F700B644FF /* LaunchScreen.storyboard */,
 				C50639242C75C8F700B644FF /* Info.plist */,
@@ -125,6 +142,125 @@
 				C50639392C75C8F700B644FF /* SocialLoginFeatureWithCleanArchitectureUITestsLaunchTests.swift */,
 			);
 			path = SocialLoginFeatureWithCleanArchitectureUITests;
+			sourceTree = "<group>";
+		};
+		C5522A832C76F7E200953006 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				C5522A8B2C76F83700953006 /* Network */,
+				C5522A8A2C76F82000953006 /* Repositories */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		C5522A842C76F7F000953006 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				C5522A8F2C76F86800953006 /* RepositoriesInterfaces */,
+				C5522A892C76F81B00953006 /* UseCases */,
+				C5522A882C76F80B00953006 /* Entities */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		C5522A852C76F7F500953006 /* Feature */ = {
+			isa = PBXGroup;
+			children = (
+				C5522A872C76F80100953006 /* ViewControllers */,
+				C5522A862C76F7FB00953006 /* ViewModels */,
+			);
+			path = Feature;
+			sourceTree = "<group>";
+		};
+		C5522A862C76F7FB00953006 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				C5522AA12C76F95300953006 /* LoginViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		C5522A872C76F80100953006 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				C506391A2C75C8F600B644FF /* LoginViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		C5522A882C76F80B00953006 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		C5522A892C76F81B00953006 /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+				C5522A902C76F88100953006 /* SocialLoginUseCase.swift */,
+			);
+			path = UseCases;
+			sourceTree = "<group>";
+		};
+		C5522A8A2C76F82000953006 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				C5522A8E2C76F84D00953006 /* OAuthRepositories */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		C5522A8B2C76F83700953006 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				C5522A8D2C76F84300953006 /* Targets */,
+				C5522A8C2C76F83D00953006 /* DataMapping */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		C5522A8C2C76F83D00953006 /* DataMapping */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DataMapping;
+			sourceTree = "<group>";
+		};
+		C5522A8D2C76F84300953006 /* Targets */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Targets;
+			sourceTree = "<group>";
+		};
+		C5522A8E2C76F84D00953006 /* OAuthRepositories */ = {
+			isa = PBXGroup;
+			children = (
+				C5522A932C76F8AF00953006 /* AppleOAuthRepository.swift */,
+				C5522A952C76F8B900953006 /* GoogleOAuthRepository.swift */,
+				C5522A972C76F8C800953006 /* LineOAuthRepository.swift */,
+				C5522A992C76F8E900953006 /* TwitterOAuthRepository.swift */,
+				C5522A9B2C76F90E00953006 /* FacebookOAuthRepository.swift */,
+				C5522A9D2C76F91600953006 /* KakaoOAuthRepository.swift */,
+				C5522A9F2C76F91F00953006 /* NaverOAuthRepository.swift */,
+			);
+			path = OAuthRepositories;
+			sourceTree = "<group>";
+		};
+		C5522A8F2C76F86800953006 /* RepositoriesInterfaces */ = {
+			isa = PBXGroup;
+			children = (
+				C5522A922C76F89200953006 /* OAuthRepositories */,
+			);
+			path = RepositoriesInterfaces;
+			sourceTree = "<group>";
+		};
+		C5522A922C76F89200953006 /* OAuthRepositories */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = OAuthRepositories;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,7 +369,6 @@
 			files = (
 				C50639202C75C8F700B644FF /* Assets.xcassets in Resources */,
 				C50639232C75C8F700B644FF /* Base in Resources */,
-				C506391E2C75C8F600B644FF /* Base in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,9 +393,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C506391B2C75C8F600B644FF /* ViewController.swift in Sources */,
+				C5522A962C76F8B900953006 /* GoogleOAuthRepository.swift in Sources */,
+				C5522A9E2C76F91600953006 /* KakaoOAuthRepository.swift in Sources */,
+				C5522AA02C76F91F00953006 /* NaverOAuthRepository.swift in Sources */,
+				C5522A912C76F88100953006 /* SocialLoginUseCase.swift in Sources */,
+				C5522A942C76F8AF00953006 /* AppleOAuthRepository.swift in Sources */,
+				C5522A9A2C76F8E900953006 /* TwitterOAuthRepository.swift in Sources */,
+				C506391B2C75C8F600B644FF /* LoginViewController.swift in Sources */,
 				C50639172C75C8F600B644FF /* AppDelegate.swift in Sources */,
+				C5522AA22C76F95300953006 /* LoginViewModel.swift in Sources */,
+				C5522A9C2C76F90E00953006 /* FacebookOAuthRepository.swift in Sources */,
 				C50639192C75C8F600B644FF /* SceneDelegate.swift in Sources */,
+				C5522A982C76F8C800953006 /* LineOAuthRepository.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,14 +441,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		C506391C2C75C8F600B644FF /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				C506391D2C75C8F600B644FF /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		C50639212C75C8F700B644FF /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -447,7 +583,6 @@
 				INFOPLIST_FILE = SocialLoginFeatureWithCleanArchitecture/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -475,7 +610,6 @@
 				INFOPLIST_FILE = SocialLoginFeatureWithCleanArchitecture/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
