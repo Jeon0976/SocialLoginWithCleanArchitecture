@@ -6,7 +6,18 @@
 //
 
 import Foundation
+import AuthenticationServices
 
 final class AppleOAuthRepository {
     
+}
+
+extension AppleOAuthRepository: SocialLoginOAtuhRepository {
+    func login() {
+        
+    }
+    
+    func logout() {
+        
+    }
 }

@@ -7,6 +7,18 @@
 
 import Foundation
 
+import GoogleSignIn
+
 final class GoogleOAuthRepository {
     
+}
+
+extension GoogleOAuthRepository: SocialLoginOAtuhRepository {
+    func login() {
+        
+    }
+    
+    func logout() {
+        
+    }
 }

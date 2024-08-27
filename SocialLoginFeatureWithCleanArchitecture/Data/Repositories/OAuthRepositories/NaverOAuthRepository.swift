@@ -10,3 +10,13 @@ import Foundation
 final class NaverOAuthRepository {
     
 }
+
+extension NaverOAuthRepository: SocialLoginOAtuhRepository {
+    func login() {
+        
+    }
+    
+    func logout() {
+        
+    }
+}

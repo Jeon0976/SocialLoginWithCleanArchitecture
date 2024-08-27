@@ -7,6 +7,18 @@
 
 import Foundation
 
+import FacebookLogin
+
 final class FacebookOAuthRepository {
     
+}
+
+extension FacebookOAuthRepository: SocialLoginOAtuhRepository {
+    func login() {
+        
+    }
+    
+    func logout() {
+        
+    }
 }

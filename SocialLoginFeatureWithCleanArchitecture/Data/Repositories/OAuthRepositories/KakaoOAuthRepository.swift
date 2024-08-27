@@ -10,3 +10,13 @@ import Foundation
 final class KakaoOAuthRepository {
     
 }
+
+extension KakaoOAuthRepository: SocialLoginOAtuhRepository {
+    func login() {
+        
+    }
+    
+    func logout() {
+        
+    }
+}

@@ -7,6 +7,18 @@
 
 import Foundation
 
+import LineSDK
+
 final class LineOAuthRepository {
     
+}
+
+extension LineOAuthRepository: SocialLoginOAtuhRepository {
+    func login() {
+        
+    }
+    
+    func logout() {
+        
+    }
 }

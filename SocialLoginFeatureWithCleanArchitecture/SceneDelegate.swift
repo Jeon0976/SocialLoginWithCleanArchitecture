@@ -16,8 +16,20 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         guard let windowScene = (scene as? UIWindowScene) else { return }
         
         let window = UIWindow(windowScene: windowScene)
+                
+        let usecase = DefaultSocialLoginUseCase.create(
+            appleOAuthRepo: AppleOAuthRepository(),
+            googleOAuthRepo: GoogleOAuthRepository(),
+            lineOAuthRepo: LineOAuthRepository(),
+            twitterOAuthRepo: TwitterOAuthRepository(),
+            facebookOAuthRepo: FacebookOAuthRepository()
+        )
+        
+        let viewModel = LoginViewModel.create(socialLoginUsecase: usecase)
+        let viewController = LoginViewController.create(viewModel: viewModel)
+        
         self.window = window
-        self.window?.rootViewController = LoginViewController()
+        self.window?.rootViewController = viewController
         self.window?.makeKeyAndVisible()
     }
 }

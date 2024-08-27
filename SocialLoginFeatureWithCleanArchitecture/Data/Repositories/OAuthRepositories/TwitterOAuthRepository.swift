@@ -10,3 +10,13 @@ import Foundation
 final class TwitterOAuthRepository {
     
 }
+
+extension TwitterOAuthRepository: SocialLoginOAtuhRepository {
+    func login() {
+        
+    }
+    
+    func logout() {
+        
+    }
+}
