@@ -11,8 +11,8 @@ final class NaverOAuthRepository {
     
 }
 
-extension NaverOAuthRepository: SocialLoginOAtuhRepository {
-    func login() -> AnyPublisher<Void, Error> {
+extension NaverOAuthRepository: SocialLoginOAtuhRepositoryInterface {
+    func login() -> AnyPublisher<UserInfo, Error> {
         return Future { promise in
             
         }

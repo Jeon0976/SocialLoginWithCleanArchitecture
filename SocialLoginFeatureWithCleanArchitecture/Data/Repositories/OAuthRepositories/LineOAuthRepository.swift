@@ -13,8 +13,8 @@ final class LineOAuthRepository {
     
 }
 
-extension LineOAuthRepository: SocialLoginOAtuhRepository {
-    func login() -> AnyPublisher<Void, Error> {
+extension LineOAuthRepository: SocialLoginOAtuhRepositoryInterface {
+    func login() -> AnyPublisher<UserInfo, Error> {
         return Future { promise in
             
         }

@@ -13,8 +13,8 @@ final class FacebookOAuthRepository {
     
 }
 
-extension FacebookOAuthRepository: SocialLoginOAtuhRepository {
-    func login() -> AnyPublisher<Void, Error> {
+extension FacebookOAuthRepository: SocialLoginOAtuhRepositoryInterface {
+    func login() -> AnyPublisher<UserInfo, Error> {
         return Future { promise in
             
         }

@@ -13,8 +13,8 @@ final class GoogleOAuthRepository {
     
 }
 
-extension GoogleOAuthRepository: SocialLoginOAtuhRepository {
-    func login() -> AnyPublisher<Void, Error> {
+extension GoogleOAuthRepository: SocialLoginOAtuhRepositoryInterface {
+    func login() -> AnyPublisher<UserInfo, Error> {
         return Future { promise in
             
         }

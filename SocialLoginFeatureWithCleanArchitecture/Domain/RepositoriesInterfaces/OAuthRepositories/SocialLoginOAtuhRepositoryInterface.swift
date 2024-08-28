@@ -7,7 +7,7 @@
 
 import Combine
 
-protocol SocialLoginOAtuhRepository {
-    func login() -> AnyPublisher<Void, Error>
+protocol SocialLoginOAtuhRepositoryInterface {
+    func login() -> AnyPublisher<UserInfo, Error>
     func logout()
 }

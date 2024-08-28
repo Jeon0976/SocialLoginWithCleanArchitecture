@@ -11,8 +11,8 @@ final class TwitterOAuthRepository {
     
 }
 
-extension TwitterOAuthRepository: SocialLoginOAtuhRepository {
-    func login() -> AnyPublisher<Void, Error> {
+extension TwitterOAuthRepository: SocialLoginOAtuhRepositoryInterface {
+    func login() -> AnyPublisher<UserInfo, Error> {
         return Future { promise in
             
         }

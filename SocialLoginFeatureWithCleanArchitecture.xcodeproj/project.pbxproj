@@ -21,9 +21,13 @@
 		C533123A2C7D72BC0026703B /* FacebookLogin in Frameworks */ = {isa = PBXBuildFile; productRef = C53312392C7D72BC0026703B /* FacebookLogin */; };
 		C533123D2C7D72C70026703B /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = C533123C2C7D72C70026703B /* GoogleSignIn */; };
 		C533123F2C7D72C70026703B /* GoogleSignInSwift in Frameworks */ = {isa = PBXBuildFile; productRef = C533123E2C7D72C70026703B /* GoogleSignInSwift */; };
-		C53312412C7DB7D30026703B /* SocialLoginOAtuhRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = C53312402C7DB7D30026703B /* SocialLoginOAtuhRepository.swift */; };
+		C53312412C7DB7D30026703B /* SocialLoginOAtuhRepositoryInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = C53312402C7DB7D30026703B /* SocialLoginOAtuhRepositoryInterface.swift */; };
 		C53312432C7E993C0026703B /* LoginType.swift in Sources */ = {isa = PBXBuildFile; fileRef = C53312422C7E993C0026703B /* LoginType.swift */; };
 		C53312462C7EBA970026703B /* LoginButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C53312452C7EBA970026703B /* LoginButton.swift */; };
+		C53312482C7F09A60026703B /* UserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = C53312472C7F09A60026703B /* UserInfo.swift */; };
+		C533124A2C7F0B210026703B /* UserInfoRepositoryInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = C53312492C7F0B210026703B /* UserInfoRepositoryInterface.swift */; };
+		C533124C2C7F0C870026703B /* DIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C533124B2C7F0C870026703B /* DIContainer.swift */; };
+		C53312502C7F0D720026703B /* UserInfoRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = C533124F2C7F0D720026703B /* UserInfoRepository.swift */; };
 		C5522A912C76F88100953006 /* SocialLoginUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5522A902C76F88100953006 /* SocialLoginUseCase.swift */; };
 		C5522A942C76F8AF00953006 /* AppleOAuthRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5522A932C76F8AF00953006 /* AppleOAuthRepository.swift */; };
 		C5522A962C76F8B900953006 /* GoogleOAuthRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5522A952C76F8B900953006 /* GoogleOAuthRepository.swift */; };
@@ -74,9 +78,13 @@
 		C50639372C75C8F700B644FF /* SocialLoginFeatureWithCleanArchitectureUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialLoginFeatureWithCleanArchitectureUITests.swift; sourceTree = "<group>"; };
 		C50639392C75C8F700B644FF /* SocialLoginFeatureWithCleanArchitectureUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialLoginFeatureWithCleanArchitectureUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		C533122E2C7D71EF0026703B /* SocialLoginFeatureWithCleanArchitecture.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SocialLoginFeatureWithCleanArchitecture.entitlements; sourceTree = "<group>"; };
-		C53312402C7DB7D30026703B /* SocialLoginOAtuhRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialLoginOAtuhRepository.swift; sourceTree = "<group>"; };
+		C53312402C7DB7D30026703B /* SocialLoginOAtuhRepositoryInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialLoginOAtuhRepositoryInterface.swift; sourceTree = "<group>"; };
 		C53312422C7E993C0026703B /* LoginType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginType.swift; sourceTree = "<group>"; };
 		C53312452C7EBA970026703B /* LoginButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginButton.swift; sourceTree = "<group>"; };
+		C53312472C7F09A60026703B /* UserInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfo.swift; sourceTree = "<group>"; };
+		C53312492C7F0B210026703B /* UserInfoRepositoryInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoRepositoryInterface.swift; sourceTree = "<group>"; };
+		C533124B2C7F0C870026703B /* DIContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DIContainer.swift; sourceTree = "<group>"; };
+		C533124F2C7F0D720026703B /* UserInfoRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoRepository.swift; sourceTree = "<group>"; };
 		C5522A902C76F88100953006 /* SocialLoginUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialLoginUseCase.swift; sourceTree = "<group>"; };
 		C5522A932C76F8AF00953006 /* AppleOAuthRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleOAuthRepository.swift; sourceTree = "<group>"; };
 		C5522A952C76F8B900953006 /* GoogleOAuthRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleOAuthRepository.swift; sourceTree = "<group>"; };
@@ -155,6 +163,7 @@
 				C533122E2C7D71EF0026703B /* SocialLoginFeatureWithCleanArchitecture.entitlements */,
 				C50639162C75C8F600B644FF /* AppDelegate.swift */,
 				C50639182C75C8F600B644FF /* SceneDelegate.swift */,
+				C533124B2C7F0C870026703B /* DIContainer.swift */,
 				C5522A832C76F7E200953006 /* Data */,
 				C5522A842C76F7F000953006 /* Domain */,
 				C5522A852C76F7F500953006 /* Feature */,
@@ -190,6 +199,21 @@
 				C53312452C7EBA970026703B /* LoginButton.swift */,
 			);
 			path = Components;
+			sourceTree = "<group>";
+		};
+		C533124D2C7F0D310026703B /* UserInfoRepositories */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UserInfoRepositories;
+			sourceTree = "<group>";
+		};
+		C533124E2C7F0D510026703B /* UserInfoRepositories */ = {
+			isa = PBXGroup;
+			children = (
+				C533124F2C7F0D720026703B /* UserInfoRepository.swift */,
+			);
+			path = UserInfoRepositories;
 			sourceTree = "<group>";
 		};
 		C5522A832C76F7E200953006 /* Data */ = {
@@ -241,6 +265,7 @@
 			isa = PBXGroup;
 			children = (
 				C53312422C7E993C0026703B /* LoginType.swift */,
+				C53312472C7F09A60026703B /* UserInfo.swift */,
 			);
 			path = Entities;
 			sourceTree = "<group>";
@@ -256,6 +281,7 @@
 		C5522A8A2C76F82000953006 /* Repositories */ = {
 			isa = PBXGroup;
 			children = (
+				C533124E2C7F0D510026703B /* UserInfoRepositories */,
 				C5522A8E2C76F84D00953006 /* OAuthRepositories */,
 			);
 			path = Repositories;
@@ -309,7 +335,8 @@
 		C5522A922C76F89200953006 /* OAuthRepositories */ = {
 			isa = PBXGroup;
 			children = (
-				C53312402C7DB7D30026703B /* SocialLoginOAtuhRepository.swift */,
+				C53312402C7DB7D30026703B /* SocialLoginOAtuhRepositoryInterface.swift */,
+				C53312492C7F0B210026703B /* UserInfoRepositoryInterface.swift */,
 			);
 			path = OAuthRepositories;
 			sourceTree = "<group>";
@@ -341,6 +368,7 @@
 		C5522AA62C76FA6D00953006 /* Repositories */ = {
 			isa = PBXGroup;
 			children = (
+				C533124D2C7F0D310026703B /* UserInfoRepositories */,
 				C5522AA72C76FA7400953006 /* OAuthRepositories */,
 			);
 			path = Repositories;
@@ -525,16 +553,20 @@
 				C5522A9E2C76F91600953006 /* KakaoOAuthRepository.swift in Sources */,
 				C5522AA02C76F91F00953006 /* NaverOAuthRepository.swift in Sources */,
 				C5522A912C76F88100953006 /* SocialLoginUseCase.swift in Sources */,
+				C53312482C7F09A60026703B /* UserInfo.swift in Sources */,
 				C5522A942C76F8AF00953006 /* AppleOAuthRepository.swift in Sources */,
-				C53312412C7DB7D30026703B /* SocialLoginOAtuhRepository.swift in Sources */,
+				C533124A2C7F0B210026703B /* UserInfoRepositoryInterface.swift in Sources */,
+				C53312412C7DB7D30026703B /* SocialLoginOAtuhRepositoryInterface.swift in Sources */,
 				C5522A9A2C76F8E900953006 /* TwitterOAuthRepository.swift in Sources */,
 				C53312432C7E993C0026703B /* LoginType.swift in Sources */,
 				C506391B2C75C8F600B644FF /* LoginViewController.swift in Sources */,
+				C53312502C7F0D720026703B /* UserInfoRepository.swift in Sources */,
 				C50639172C75C8F600B644FF /* AppDelegate.swift in Sources */,
 				C53312462C7EBA970026703B /* LoginButton.swift in Sources */,
 				C5522AA22C76F95300953006 /* LoginViewModel.swift in Sources */,
 				C5522A9C2C76F90E00953006 /* FacebookOAuthRepository.swift in Sources */,
 				C50639192C75C8F600B644FF /* SceneDelegate.swift in Sources */,
+				C533124C2C7F0C870026703B /* DIContainer.swift in Sources */,
 				C5522A982C76F8C800953006 /* LineOAuthRepository.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

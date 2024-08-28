@@ -8,13 +8,13 @@
 import Combine
 
 final class LoginViewModel {
-    private var socialLoginUsecase: SocialLoginUsecase!
+    private var socialLoginUsecase: SocialLoginUsecaseInterface!
     private var cancellables = Set<AnyCancellable>()
 
     @Published var selectedLoginButton: LoginButton?
     
     static func create(
-        socialLoginUsecase: SocialLoginUsecase
+        socialLoginUsecase: SocialLoginUsecaseInterface
     ) -> LoginViewModel {
         let viewModel = LoginViewModel()
         
