@@ -6,9 +6,11 @@
 //
 
 import UIKit
+import Combine
 
-class LoginViewController: UIViewController {
+final class LoginViewController: UIViewController {
     private var viewModel: LoginViewModel!
+    private var cancellables = Set<AnyCancellable>()
     
     private let welcomeLabel: UILabel = {
         let lbl = UILabel()
@@ -27,7 +29,7 @@ class LoginViewController: UIViewController {
     ) -> LoginViewController {
         let viewController = LoginViewController()
         
-        viewController.viewModel = LoginViewModel()
+        viewController.viewModel = viewModel
         
         return viewController
     }
@@ -37,23 +39,11 @@ class LoginViewController: UIViewController {
         
         setAttribute()
         setLayout()
+        bindViewModel()
     }
     
     private func setAttribute() {
         view.backgroundColor = .white
-    }
-    
-    private func createLoginButton(for type: LoginButton)
-    -> UIButton {
-        let button = UIButton(type: .system)
-        
-        button.setTitle("Sign in with \(type.title)", for: .normal)
-        button.setTitleColor(type.titleColor, for: .normal)
-        button.titleLabel?.font = .systemFont(ofSize: 18, weight: .semibold)
-        button.backgroundColor = type.backgroundColor
-        button.layer.cornerRadius = 16
-        
-        return button 
     }
     
     private func setLayout() {
@@ -80,6 +70,25 @@ class LoginViewController: UIViewController {
         setupLoginButtonConstraints()
     }
     
+    private func createLoginButton(for type: LoginButton)
+    -> UIButton {
+        let button = UIButton(type: .system)
+        
+        button.setTitle("Sign in with \(type.title)", for: .normal)
+        button.setTitleColor(type.titleColor, for: .normal)
+        button.titleLabel?.font = .systemFont(ofSize: 18, weight: .semibold)
+        button.backgroundColor = type.backgroundColor
+        button.layer.cornerRadius = 16
+        button.tag = type.hashValue
+        button.addTarget(
+            self,
+            action: #selector(loginButtonTapped(_:)),
+            for: .touchUpInside
+        )
+        
+        return button
+    }
+    
     private func setupLoginButtonConstraints() {
         var previousButton: UIButton?
         
@@ -103,6 +112,22 @@ class LoginViewController: UIViewController {
         }
     }
 
+    private func bindViewModel() {
+        viewModel.$selectedLoginButton
+            .sink { [weak self] loginType in
+                guard let loginType = loginType else { return }
+                
+                print("Login button Tapped: \(loginType.title)")
+            }
+            .store(in: &cancellables)
+    }
     
+    @objc private func loginButtonTapped(_ sender: UIButton) {
+        guard let loginType = LoginButton.allCases
+            .first(where: { $0.hashValue == sender.tag }) else {
+            return }
+        
+        viewModel.handleLoginButtonTapped(for: loginType)
+    }
 }
 

@@ -22,6 +22,8 @@
 		C533123D2C7D72C70026703B /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = C533123C2C7D72C70026703B /* GoogleSignIn */; };
 		C533123F2C7D72C70026703B /* GoogleSignInSwift in Frameworks */ = {isa = PBXBuildFile; productRef = C533123E2C7D72C70026703B /* GoogleSignInSwift */; };
 		C53312412C7DB7D30026703B /* SocialLoginOAtuhRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = C53312402C7DB7D30026703B /* SocialLoginOAtuhRepository.swift */; };
+		C53312432C7E993C0026703B /* LoginType.swift in Sources */ = {isa = PBXBuildFile; fileRef = C53312422C7E993C0026703B /* LoginType.swift */; };
+		C53312462C7EBA970026703B /* LoginButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C53312452C7EBA970026703B /* LoginButton.swift */; };
 		C5522A912C76F88100953006 /* SocialLoginUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5522A902C76F88100953006 /* SocialLoginUseCase.swift */; };
 		C5522A942C76F8AF00953006 /* AppleOAuthRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5522A932C76F8AF00953006 /* AppleOAuthRepository.swift */; };
 		C5522A962C76F8B900953006 /* GoogleOAuthRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5522A952C76F8B900953006 /* GoogleOAuthRepository.swift */; };
@@ -73,6 +75,8 @@
 		C50639392C75C8F700B644FF /* SocialLoginFeatureWithCleanArchitectureUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialLoginFeatureWithCleanArchitectureUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		C533122E2C7D71EF0026703B /* SocialLoginFeatureWithCleanArchitecture.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SocialLoginFeatureWithCleanArchitecture.entitlements; sourceTree = "<group>"; };
 		C53312402C7DB7D30026703B /* SocialLoginOAtuhRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialLoginOAtuhRepository.swift; sourceTree = "<group>"; };
+		C53312422C7E993C0026703B /* LoginType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginType.swift; sourceTree = "<group>"; };
+		C53312452C7EBA970026703B /* LoginButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginButton.swift; sourceTree = "<group>"; };
 		C5522A902C76F88100953006 /* SocialLoginUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialLoginUseCase.swift; sourceTree = "<group>"; };
 		C5522A932C76F8AF00953006 /* AppleOAuthRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleOAuthRepository.swift; sourceTree = "<group>"; };
 		C5522A952C76F8B900953006 /* GoogleOAuthRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleOAuthRepository.swift; sourceTree = "<group>"; };
@@ -180,6 +184,14 @@
 			path = SocialLoginFeatureWithCleanArchitectureUITests;
 			sourceTree = "<group>";
 		};
+		C53312442C7EBA8C0026703B /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				C53312452C7EBA970026703B /* LoginButton.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
 		C5522A832C76F7E200953006 /* Data */ = {
 			isa = PBXGroup;
 			children = (
@@ -219,6 +231,7 @@
 		C5522A872C76F80100953006 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				C53312442C7EBA8C0026703B /* Components */,
 				C506391A2C75C8F600B644FF /* LoginViewController.swift */,
 			);
 			path = ViewControllers;
@@ -227,6 +240,7 @@
 		C5522A882C76F80B00953006 /* Entities */ = {
 			isa = PBXGroup;
 			children = (
+				C53312422C7E993C0026703B /* LoginType.swift */,
 			);
 			path = Entities;
 			sourceTree = "<group>";
@@ -514,8 +528,10 @@
 				C5522A942C76F8AF00953006 /* AppleOAuthRepository.swift in Sources */,
 				C53312412C7DB7D30026703B /* SocialLoginOAtuhRepository.swift in Sources */,
 				C5522A9A2C76F8E900953006 /* TwitterOAuthRepository.swift in Sources */,
+				C53312432C7E993C0026703B /* LoginType.swift in Sources */,
 				C506391B2C75C8F600B644FF /* LoginViewController.swift in Sources */,
 				C50639172C75C8F600B644FF /* AppDelegate.swift in Sources */,
+				C53312462C7EBA970026703B /* LoginButton.swift in Sources */,
 				C5522AA22C76F95300953006 /* LoginViewModel.swift in Sources */,
 				C5522A9C2C76F90E00953006 /* FacebookOAuthRepository.swift in Sources */,
 				C50639192C75C8F600B644FF /* SceneDelegate.swift in Sources */,

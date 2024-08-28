@@ -5,63 +5,13 @@
 //  Created by 전성훈 on 8/22/24.
 //
 
-import UIKit
-
-enum LoginButton: CaseIterable {
-    case apple
-    case google
-    case line
-    case x
-    case facebook
-    
-    var title: String {
-        switch self {
-        case .apple:
-            "Apple"
-        case .google:
-            "Google"
-        case .line:
-            "Line"
-        case .x:
-            "X"
-        case .facebook:
-            "Facebook"
-        }
-    }
-    
-    var titleColor: UIColor {
-        switch self {
-        case .apple:
-                .white
-        case .google:
-                .white
-        case .line:
-                .white
-        case .x:
-                .white
-        case .facebook:
-                .white
-        }
-    }
-    
-    var backgroundColor: UIColor {
-        switch self {
-        case .apple:
-                .black
-        case .google:
-                .lightGray
-        case .line:
-                .systemGreen
-        case .x:
-                .black
-        case .facebook:
-                .systemBlue
-        }
-    }
-}
+import Combine
 
 final class LoginViewModel {
     private var socialLoginUsecase: SocialLoginUsecase!
+    private var cancellables = Set<AnyCancellable>()
+
+    @Published var selectedLoginButton: LoginButton?
     
     static func create(
         socialLoginUsecase: SocialLoginUsecase
@@ -75,5 +25,37 @@ final class LoginViewModel {
     
     func createLoginButtons() -> [LoginButton] {
         return LoginButton.allCases
+    }
+    
+    func handleLoginButtonTapped(for type: LoginButton) {
+        selectedLoginButton = type
+        
+        let loginType: LoginType
+        
+        switch type {
+        case .apple:
+            loginType = .apple
+        case .google:
+            loginType = .google
+        case .line:
+            loginType = .line
+        case .x:
+            loginType = .x
+        case .facebook:
+            loginType = .facebook
+        }
+        
+        socialLoginUsecase.login(loginType: loginType)
+            .sink { completion in
+                switch completion {
+                case .finished:
+                    print("After end login logic")
+                case .failure(let error):
+                    break
+                }
+            } receiveValue: {
+                print("After value changed \($0)")
+            }
+            .store(in: &cancellables)
     }
 }

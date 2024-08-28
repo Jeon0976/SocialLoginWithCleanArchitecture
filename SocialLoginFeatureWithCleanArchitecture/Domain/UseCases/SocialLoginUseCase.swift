@@ -5,10 +5,10 @@
 //  Created by 전성훈 on 8/22/24.
 //
 
-import Foundation
+import Combine
 
 protocol SocialLoginUsecase {
-    
+    func login(loginType: LoginType) -> AnyPublisher<Void, Error>
 }
 
 final class DefaultSocialLoginUseCase {
@@ -38,5 +38,18 @@ final class DefaultSocialLoginUseCase {
 }
 
 extension DefaultSocialLoginUseCase: SocialLoginUsecase {
-    
+    func login(loginType: LoginType) -> AnyPublisher<Void, Error> {
+        switch loginType {
+        case .apple:
+            return appleOAuthRepository.login()
+        case .google:
+            return googleOAuthRepository.login()
+        case .x:
+            return twitterOAuthRepository.login()
+        case .facebook:
+            return facebookOAuthRepository.login()
+        case .line:
+            return lineOAuthRepository.login()
+        }
+    }
 }
